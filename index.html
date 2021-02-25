@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<title>Modificando css con js</title>
+</head>
+<body>
+
+	<!---Manipulando el css usando js--->
+<style type="text/css">
+	.cuarto-circulo{
+		width: 100px;
+		height: 50px;
+		border: 2px solid #555;
+		background: #5cb85c;
+		-moz-border-radius: 100px 100px 0 0;
+		-webkit-border-radius: 100px 100px 0 0;
+		border-radius: 100px 100px 0 0; 
+	}
+</style>
+
+	<p>Color</p>
+	<input type="color" id="color__controller" onchange="ControllerRadio();">
+	<p>Tamaño:</p>
+	<input type="range" max="500" min="0" id="size__controller" onchange="ControllerRadio();">
+
+	<center>
+		<div id="Radio" style="position: fixed; right: 100px; top: 50px;"  onchange="ControllerRadio();"></div>
+	</center>
+	
+
+	<script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>
